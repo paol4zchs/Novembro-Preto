@@ -1,0 +1,201 @@
+/* Reset básico de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container da barra de progresso */
+.progress-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px; /* Tamanho da barra de progresso */
+    background-color: #f0f0f0; /* Cor de fundo da barra */
+    z-index: 9999; /* Garante que a barra fique sobre outros elementos */
+}
+
+/* A barra de progresso em si */
+.progress-bar {
+    height: 100%;
+    width: 0%; /* Inicialmente, a barra está vazia */
+    background-color: #000; /* Cor da barra de progresso */
+    transition: width 0.45s ease-in-out; /* Transição suave */
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo img{
+    width: 90px;
+    height: 80px;
+    margin: 30px;
+}
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    margin-right: 50px;
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+    font-size: larger;
+}
+
+.comeco{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background-color:#fff;
+}
+
+.comeco h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+}
+
+.comeco p{
+    font-weight: 300;
+    font-size: 30px;
+    margin-bottom: 180px;
+}
+
+.direita img{
+    margin-bottom: 100px;
+    width: 500px;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 30px 100px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.escrita h1{
+    margin-left: 130px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+
+.escrita p{
+    margin-left: 60px;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.div1 img{
+    margin-right: 90px;
+    border-radius: 100px;
+}
+
+
+/* Seções */
+.section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    margin-top: 80px;
+    font-weight: 400;
+    color: #000;
+}
+
+.section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Timeline */
+.timeline {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.timeline-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+
+@media(max-width: 500px){
+
+    .comeco{
+        flex-direction: column;
+
+    }
+    .comeco h1{
+        font-size: 50px;
+        margin-top: 35%;
+    }
+
+    .comeco p{
+        font-size: 25px;
+    }
+
+    .direita img{
+        width: 300px;
+    }
+
+    nav ul li{
+        flex-direction: column;
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .logo img{
+        width: 60px;
+        height: 50px;
+        margin-top: 70px;
+      }
+      
+      .div1{
+        width: 80%;
+    }
+
+    
+}
+  
